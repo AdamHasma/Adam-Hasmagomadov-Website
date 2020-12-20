@@ -1,0 +1,497 @@
+@font-face {
+    font-family: TT hoves;
+    src        : url(fonts/regular.woff);
+    font-style : normal;
+}
+
+@font-face {
+    font-family: TT hoves;
+    src        : url(fonts/demibold.woff);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: TT hoves;
+    src        : url(fonts/medium.woff);
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: TT hoves;
+    src        : url(fonts/bold.woff);
+    font-weight: bold;
+}
+body{
+  height: 100vh;
+}
+html, body {
+    font-family: TT hoves;
+}
+
+::selection {
+    background: #F65165;
+    color     : white;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #081421;
+  }
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+background: #2f3a48;
+}
+
+body::-webkit-scrollbar-width {
+width: thin;
+}
+
+.blue-line::before {
+    font-family  : TT hoves;
+    font-weight  : default;
+    border-bottom: 1px solid #335084;
+    transition   : right .3s ease-out;
+}
+
+.links {
+    text-align: right;
+}
+.force{
+  width: 812px;
+  height: auto !important;
+}
+.slidm{
+  height:612.750px !important;
+}
+.link{
+  text-decoration: none;
+  color:black;
+  font-size:36px;
+}
+
+.title {
+    font-family   : TT hoves;
+    font-style    : normal;
+    font-weight   : bold;
+    color         : #000000;
+    margin-bottom : 0px;
+    margin-top    : 1px;
+    letter-spacing: -10.5px;
+    text-align    : left;
+    text-indent   : -10px;
+}
+
+.dot{
+    color         : #F65165;
+    display       : inline-block;
+    vertical-align: bottom;
+    text-indent   : 0;
+}
+
+.subtitle {
+    font-family  : TT Hoves;
+    font-style   : normal;
+    font-weight  : normal;
+    font-size    : 36px;
+    color        : #8D8D8D;
+    margin-top   : 60px;
+    margin-bottom: 0px;
+}
+
+.view-button {
+    margin-top      : 20px;
+    height          : 42px;
+    width           : 186px;
+    background-color: #F65165;
+}
+
+.divider {
+    color : #335084;
+    width : 57px;
+    height: 2px;
+}
+
+.page-title  {
+    font-family   : TT hoves;
+    font-style    : normal;
+    font-weight   : bold;
+    color         : rgba(0, 0, 0, 0.8);
+    margin-bottom : 0px;
+    margin-top    : 1px;
+    text-align    : left;
+    font-size     : 144px;
+    line-height   : 130px;
+    letter-spacing: -4.5px;
+    text-transform: capitalize;
+    text-indent   : -7px;
+}
+
+.text {
+    font-family          : TT Hoves;
+    font-style           : normal;
+    font-weight          : normal;
+    font-size            : 16px;
+    color                : #000000;
+    line-height          : 27px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    text-align           : left;
+}
+
+.right-img {
+    float  : right;
+    z-index: -1;
+}
+
+.custom-list li::before {
+    background-image: url("img/dot.svg");
+    width: 0.4em;
+    margin-left: 10px;
+}
+
+.large-subtitle {
+    font-family   : TT Hoves;
+    font-style    : normal;
+    font-weight   : normal;
+    color         : #9B9B9B;
+    text-transform: capitalize;
+    font-weight   : 600;
+    letter-spacing: -1px;
+}
+
+.accordion-title {
+    font-family: TT Hoves;
+    font-style : bold;
+    font-weight: normal;
+    font-size  : 32px;
+    color      : #000000;
+}
+
+.accordion-content {
+    font-family: TT Hoves;
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 16px;
+    color      : #000000;
+}
+
+.project-descriptor {
+    font-family   : TT Hoves;
+    font-style    : normal;
+    font-weight   : bold;
+    color         : #9B9B9B;
+    font-size     : 30px;
+    text-transform: uppercase;
+}
+
+.project-refferal {
+    color          : #000000;
+    font-family    : TT Hoves;
+    font-style     : normal;
+    font-weight    : normal;
+    font-size      : 30px;
+    text-decoration: underline;
+}
+
+.project-refferal a:hover {
+    text-decoration: none;
+}
+
+.contact-text {
+    font-family          : TT Hoves;
+    font-style           : normal;
+    font-weight          : 500;
+    font-size            : 72px;
+    line-height          : 74px;
+    text-align           : center;
+    letter-spacing       : -0.015em;
+    text-decoration-line : underline;
+    font-feature-settings: 'ss04' on;
+    color                : #000000;
+}
+
+.contact-text a {
+    color          : #000000;
+    text-decoration: underline;
+}
+
+.contact-grid {
+    padding-top    : 10px;
+    padding-bottom : 10px;
+    grid-column-gap: 80px;
+}
+
+.effect1 {
+    position          : relative;
+    padding           : 10px 50px 10px 20px;
+    -webkit-transition: all 0.3s;
+    -o-transition     : all 0.3s;
+    transition        : all 0.3s;
+    -webkit-transform : scale(3);
+    -ms-transform     : scale(3);
+    transform         : scale(3);             /*change scale(3) to scale(1)*/
+  }
+
+  .effect1 .bg {
+    background: #222;
+    width     : 30px;
+    height    : 2px;
+    position  : absolute;
+    right     : 0;
+    top       : 50%;
+    margin-top: -1px;
+    z-index   : -1;
+
+    -webkit-transition: all 0.3s;
+
+    -o-transition: all 0.3s;
+
+    transition: all 0.3s;
+  }
+
+  .effect1:hover {
+    padding-right: 20px;
+    color        : #fff;
+  }
+
+  .effect1:hover .bg {
+    height           : 100%;
+    width            : 100%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform    : translate(0, -50%);
+    transform        : translate(0, -50%);
+  }
+
+.effect1 .bg:before, .effect1 .bg:after {
+    content           : '';
+    height            : 2px;
+    width             : 10px;
+    background        : #222;
+    position          : absolute;
+    right             : -2px;
+    -webkit-transition: all 0.3s;
+    -o-transition     : all 0.3s;
+    transition        : all 0.3s;
+  }
+
+.effect1 .bg:before {
+    bottom           : 3px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform    : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+
+.effect1 .bg:after{
+    top              : 3px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform    : rotate(-45deg);
+    transform        : rotate(-45deg);
+}
+
+  .effect1: hover .bg: before,
+  .effect1: hover .bg: after{
+    right: 0;
+  }
+
+  .effect1:hover .bg:before{
+    bottom: 6px;
+  }
+
+  .effect1:hover .bg:after{
+    top: 6px;
+  }
+
+.bg-div {
+    width     : 694px;
+    background: rgba(51, 80, 132, 0.04);
+  }
+
+.dotnav-box {
+    width              : 139px;
+    height             : 21px;
+    border             : 3px solid rgba(51, 80, 132, 0.25);
+    transition         : .2s ease-in-out;
+    transition-property: background-color, border-color;
+    border-radius      : 23px;
+}
+
+.active {
+    background-color: rgba(51, 80, 132, 0.25);
+    border-color    : transparent;
+}
+
+.dotnav-box:hover {
+    background-color: rgba(51, 80, 132, 0.25);
+    border-color    : transparent;
+}
+
+.title-404 {
+    font-family   : TT hoves;
+    font-style    : normal;
+    font-weight   : bold;
+    color         : #000000;
+    margin-bottom : 0px;
+    margin-top    : 1px;
+    text-align    : left;
+    font-size     : 144px;
+    line-height   : 130px;
+    letter-spacing: -4.5px;
+    text-transform: capitalize;
+}
+
+.ask-404 {
+    color: #F65165
+}
+
+.parent {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.land-text {
+    font-family: TT Hoves;
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 36px;
+    line-height: 130%;
+    color      : rgba(0, 0, 0, 0.9);
+}
+
+q {
+    font-family: TT Hoves;
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 36px;
+    line-height: 130%;
+    color      : rgba(0, 0, 0, 0.9);
+}
+
+.author {
+    font-family: TT Hoves;
+    font-style : normal;
+    font-weight: normal;
+    font-size  : 36px;
+    line-height: 130%;
+    color      : rgba(0, 0, 0, 0.6);
+}
+
+b {
+    font-weight: 500;
+}
+
+.accordion-content {
+    max-width  : 750px;
+    line-height: 1.5;
+}
+.extra{
+    text-indent: -9px;
+    display    : inline-block;
+}
+
+.loader {
+    display  : inline-block;
+    width    : 30px;
+    height   : 30px;
+    position : relative;
+    border   : 4px solid #F65165;
+    animation: loader 2s infinite ease;
+  }
+
+  .loader-inner {
+    vertical-align  : top;
+    display         : inline-block;
+    width           : 100%;
+    background-color: #F65165;
+    animation       : loader-inner 2s infinite ease-in;
+  }
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(180deg);
+    }
+
+    50% {
+      transform: rotate(180deg);
+    }
+
+    75% {
+      transform: rotate(360deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+
+    25% {
+      height: 0%;
+    }
+
+    50% {
+      height: 100%;
+    }
+
+    75% {
+      height: 100%;
+    }
+
+    100% {
+      height: 0%;
+    }
+  }
+  .loader-wrapper {
+    width           : 100%;
+    height          : 100%;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    background-color: #fff;
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+  }
+  .mini{
+      width: 408;
+  }
+  .mini2{
+      width: 412;
+  }
+  .mini3{
+      width:500px;
+      position:relative;
+      bottom:30px;
+  }
+  .cursor{
+    width                     : 20px;
+    height                    : 20px;
+    border                    : 2px solid #F65165;
+    border-radius             : 50%;
+    position                  : absolute;
+    transition-duration       : 50ms;
+    transition-timing-function: ease-out;
+    pointer-events            : none;
+    z-index                   : 2;
+  }
+#pad{
+  margin-top: 15px;
+}
+#pad2{
+  padding: 30px;
+}
+#fontsize{
+  font-family: TT Hoves;
+  font-size  : 16px;
+}
+#minusmargin{
+  margin-top: 0px;
+}

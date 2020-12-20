@@ -1,0 +1,89 @@
+<html lang="en" class="uk-height-viewport">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="assets/index.css">
+    <title>adam h. | Kontakt</title>
+</head>
+<body>
+    <div class="cursor"></div>
+    <script>
+const els    = ['BUTTON','A'];
+const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {      
+          let found = 0;
+          els.forEach(function(v){
+            if(e.srcElement.closest(v))found = 1;
+          });
+            if(found){
+              col = 'opacity:0;';
+            }
+          else
+            {
+              col = 'opacity:1;';
+            }
+            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;"+col)
+        })
+</script>
+    <div class="wrap uk-background-norepeat uk-background-cover uk-background-center-center uk-cover-container">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="index.html"><img width = "130px" height = "30px" src="assets/img/logo.svg" uk-svg></a>
+            </div>
+            <div class="uk-navbar-right">
+                <div class="uk-navbar-item">
+                    <div class = "links">
+                        <div class="uk-navbar-subtitle"><a href="mich.html"><button class="uk-button uk-button-text blue-line" style="color: #335084">Über mich</button></a></div>
+                        <div class="uk-navbar-subtitle"><a href="kontakt.html"><button class="uk-button uk-button-text blue-line" style="color: #335084">Kontakt</button></a></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <section class="uk-section uk-padding-small-bottom">
+        <div class="uk-container">
+            <div uk-scrollspy="cls: uk-animation-slide-top-small"><h1 class="page-title">KONTAKT<div class="dot" style="font-size: 144px; vertical-align: initial;">.</div></h1></div>
+            <div class="uk-grid-large uk-child-width-auto uk-child-height-auto contact-grid" style="margin-top: 98px" uk-grid uk-scrollspy="cls: uk-animation-slide-top-small; delay: 500">
+                <div>
+                    <img data-src="assets/img/email.svg" uk-svg>
+                </div>
+                <div class="contact-text">
+                    <a href="mailto:kontakt@adamh.de">kontakt@adamh.de</ac>
+                </div>
+            </div>
+            <div class="uk-grid-large uk-child-width-auto uk-child-height-auto contact-grid" uk-grid uk-scrollspy="cls: uk-animation-slide-top-small; delay: 600">
+                <div>
+                    <img data-src="assets/img/phone.svg" uk-svg>
+                </div>
+                <div class="contact-text">
+                    <a href="">0511 - 999 25 28 9</ac>
+                </div>
+            </div>
+            <div class="uk-grid-large uk-child-width-auto uk-child-height-auto contact-grid" uk-grid uk-scrollspy="cls: uk-animation-slide-top-small; delay: 700">
+                <div>
+                    <img data-src="assets/img/whatsapp.svg" uk-svg>
+                </div>
+                <div class="contact-text">
+                    <a href="">WhatsApp</ac>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="wrap uk-background-norepeat uk-background-cover uk-background-center-center uk-cover-container">
+        <footer class="uk-padding-remove-top" style="width: 100%; margin-bottom: 30px;">
+            <div>
+                <div style="float: left; padding-left: 15px;"><a href="mich.html"><button class="uk-button uk-button-text blue-line" style="color: #335084">Markengestalter</button></a></div>
+                <div style="float: right; padding-right: 15px;"><a href="mich.html"></a><button class="uk-button uk-button-text blue-line" style="color: #335084">Adam Hasmagomadov</button></a></div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
